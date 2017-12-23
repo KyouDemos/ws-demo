@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.*;
  * File Header
  * PROJECT_NAME: ws-demo
  * PACKAGE_NAME: com.example.demo.controller
- * Created by wangqiang on 2017/12/21 19:12.
+ *
+ * @author wangqiang
+ * @date 2017/12/21 19:12
  */
 @RestController
 public class DemoController {
@@ -88,7 +90,9 @@ public class DemoController {
 
     private User getUserByName(String name) {
         User user = new User();
-        if (name.equals("a")) {
+
+        String a = "a";
+        if (a.equals(name)) {
             user.setAge(10);
             user.setName("A");
         } else {
